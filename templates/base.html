@@ -1,0 +1,59 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}{% trans "Multimedia tizimlariga qo'llaniladigan AI modellari" %}{% endblock %}</title>
+<meta name="description" content="{% trans 'Tasvir, audio va video uchun AI modellari' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="grain"></div>
+<header class="nav" id="nav">
+  <a href="{% url 'home' %}" class="brand">
+    <span class="brand-mark" aria-hidden="true">
+      <i class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i>
+    </span>
+    <span class="brand-text">MM&nbsp;<b>AI</b></span>
+  </a>
+  <nav class="nav-links" aria-label="main">
+    <a href="#models">{% trans "Modellar" %}</a>
+    <a href="#explain">{% trans "Chuqurroq" %}</a>
+    <a href="#demos">{% trans "Demolar" %}</a>
+    <a href="#timeline">{% trans "Tarix" %}</a>
+    <a href="#compare">{% trans "Taqqoslash" %}</a>
+    <a href="#detect">{% trans "Rasmni aniqlash" %}</a>
+    <a href="#usecases">{% trans "Qo'llanilishi" %}</a>
+    <a href="#chat" class="nav-cta">{% trans "AI bilan suhbat" %}</a>
+  </nav>
+  <form action="{% url 'set_language' %}" method="post" class="lang-switch" id="langForm">
+    {% csrf_token %}
+    <input name="next" type="hidden" value="{{ request.path }}">
+    {% get_current_language as CUR %}
+    <button type="submit" name="language" value="uz" class="lang-btn {% if CUR == 'uz' %}active{% endif %}">UZ</button>
+    <button type="submit" name="language" value="kaa" class="lang-btn {% if CUR == 'kaa' %}active{% endif %}">QQ</button>
+  </form>
+  <button class="burger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
+</header>
+
+{% block content %}{% endblock %}
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <span class="brand-mark sm"><i class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i></span>
+      <p>{% trans "Multimedia tizimlariga qo'llaniladigan AI modellari" %}</p>
+    </div>
+    <p class="muted">© 2026 · {% trans "Ta'lim maqsadida yaratilgan loyiha" %}</p>
+  </div>
+</footer>
+
+<!-- AI kutubxonalari main.js ichida dinamik yuklanadi (CDN fallback bilan) -->
+<script src="{% static 'js/main.js' %}"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

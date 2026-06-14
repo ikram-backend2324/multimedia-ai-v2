@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+db.sqlite3
+.env
+staticfiles/
+*.png
+.venv/
+venv/
+
+# Downloaded AI model files (fetched by download_models.py on build/setup).
+# Keep the folder structure (README, .gitkeep) but skip the heavy binaries.
+static/models/*/

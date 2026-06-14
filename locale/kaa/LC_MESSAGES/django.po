@@ -1,0 +1,979 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-13 19:09+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: kaa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: config/settings.py:85
+msgid "O'zbekcha"
+msgstr "Ózbekshe"
+
+#: config/settings.py:86
+msgid "Qaraqalpaqsha"
+msgstr "Qaraqalpaqsha"
+
+#: core/views.py:33 core/views.py:37 core/views.py:43 core/views.py:92
+#: core/views.py:93 core/views.py:95 core/views.py:98 templates/home.html:41
+#: templates/home.html:128 templates/home.html:254
+msgid "Tasvir"
+msgstr "Súwret"
+
+#: core/views.py:34
+msgid ""
+"Chuqur CNN ImageNet musobaqasida g'alaba qozonib, zamonaviy AI davrini "
+"boshladi."
+msgstr ""
+"Tereń CNN ImageNet jarısında jeńiske erisip, zamanagóy AI dáwirin basladı."
+
+#: core/views.py:35 core/views.py:49 core/views.py:93
+msgid "Generatsiya"
+msgstr "Generaciya"
+
+#: core/views.py:36
+msgid ""
+"Generativ raqobat tarmoqlari — ikki tarmoq bir-biriga qarshi o'qib, "
+"realistik tasvir yaratadi."
+msgstr ""
+"Generativ básekilesiw tarmaqları — eki tarmaq bir-birine qarsı oqıp, "
+"realistik súwret jaratadı."
+
+#: core/views.py:38
+msgid ""
+"Residual bog'lanishlar 150+ qatlamli tarmoqlarni o'qitishni mumkin qildi."
+msgstr "Residual baylanıslar 150+ qatlamlı tarmaqlardı oqıtıwdı múmkin etti."
+
+#: core/views.py:39 core/views.py:47 core/views.py:97 templates/home.html:50
+#: templates/home.html:255
+msgid "Audio"
+msgstr "Audio"
+
+#: core/views.py:40
+msgid ""
+"Tabiiy ovoz sintezi uchun xom audio to'lqinini generatsiya qiluvchi model."
+msgstr ""
+"Tábiyiy dawıs sintezi ushın shiyki audio tolqının generaciyalawshı model."
+
+#: core/views.py:41
+msgid "Arxitektura"
+msgstr "Arxitektura"
+
+#: core/views.py:42
+msgid ""
+"\"Attention is all you need\" — barcha modalliklar uchun asos bo'lgan "
+"arxitektura."
+msgstr ""
+"\"Attention is all you need\" — barlıq modallıqlar ushın tiykar bolǵan "
+"arxitektura."
+
+#: core/views.py:44
+msgid ""
+"Vision Transformer tasvirni patchlarga bo'lib, transformer bilan qayta "
+"ishlaydi."
+msgstr ""
+"Vision Transformer súwretti patchlarǵa bólip, transformer menen qayta "
+"isleydi."
+
+#: core/views.py:45
+msgid "Multimodal"
+msgstr "Multimodal"
+
+#: core/views.py:46
+msgid "Tasvir va matnni bitta makonda bog'lab, nol-misolli tasnifni ochdi."
+msgstr ""
+"Súwret hám tekstti bir keńislikte baylap, nol-mısallı klassifikaciyanı "
+"ashtı.Súwret hám tekstti bir keńislikte baylap, nol-mısallı klassifikaciyanı"
+" ashtı."
+
+#: core/views.py:48
+msgid ""
+"680 ming soat audio asosida o'qitilgan ko'p tilli nutqni aniqlash modeli."
+msgstr ""
+"680 mıń saat audio tiykarında oqıtılǵan kóp tilli sóylewdi anıqlaw modeli."
+
+#: core/views.py:50
+msgid ""
+"Ochiq diffuziya modeli matndan yuqori sifatli tasvir yaratishni "
+"ommalashtirdi."
+msgstr ""
+"Ashıq diffuziya modeli tekstten joqarı sapalı súwret jaratıwdı keń tarqattı."
+
+#: core/views.py:51 core/views.py:99 templates/home.html:59
+#: templates/home.html:256
+msgid "Video"
+msgstr "Video"
+
+#: core/views.py:52
+msgid ""
+"Matndan realistik video generatsiya qiluvchi diffuzion transformer modeli."
+msgstr ""
+"Teksten realistik video generaciyalawshı diffuziyalıq transformer modeli."
+
+#: core/views.py:64
+msgid "Konvolyutsion neyron tarmoq"
+msgstr "Konvolyucion neyron tarmaq"
+
+#: core/views.py:65
+msgid ""
+"Tasvirdagi piksellardan bosqichma-bosqich xususiyatlarni ajratib oladi."
+msgstr ""
+"Súwrettegi pikellerden basqıshpa-basqısh ózgesheliklerdi ajıratıp aladı."
+
+#: core/views.py:66
+msgid ""
+"CNN tasvirni kichik filtrlar (yadrolar) bilan skanerlaydi. Birinchi "
+"qatlamlar qirralar va ranglarni, keyingilari shakllar va butun obyektlarni "
+"aniqlaydi. Har bir qatlam oldingisidan murakkabroq xususiyatlarni o'rganadi."
+msgstr ""
+"CNN súwretti kishkene filtrler (yadrolar) menen skanerleydi. Birinshi "
+"qatlamlar shetlerdi hám reńlerdi, keyingileri formalardı hám pútkil "
+"obyektlerdi anıqlaydı. Hár bir qatlam aldıńǵısınan quramalıraq "
+"ózgesheliklerdi úyrenedi."
+
+#: core/views.py:67
+msgid "Tasvir tasnifi, yuzni aniqlash, tibbiy tasvir tahlili"
+msgstr "Súwret klassifikaciyası, júzdi anıqlaw, medicinalıq súwret talqılawı"
+
+#: core/views.py:68
+msgid "Generativ raqobat tarmog'i"
+msgstr "Generativ básekilesiw tarmaǵı"
+
+#: core/views.py:69
+msgid "Ikki tarmoq raqobatlashib, yangi realistik tasvir yaratadi."
+msgstr "Eki tarmaq básekilesip, jańa realistik súwret jaratadı."
+
+#: core/views.py:70
+msgid ""
+"GAN ikki qismdan iborat: generator soxta tasvir yaratadi, diskriminator esa "
+"uni haqiqiydan ajratishga harakat qiladi. Ular bir-biriga qarshi o'qib, "
+"generator borgan sari ishonchli natija beradi."
+msgstr ""
+"GAN eki bólimnen ibarat: generator jasalma súwret jaratadı, diskriminator "
+"bolsa onı haqıyqıydan ajıratıwǵa háreket etedi. Olar bir-birine qarsı oqıp, "
+"generator barǵan sayın isenimli nátiyje beredi."
+
+#: core/views.py:71
+msgid "Yuz generatsiyasi, uslubni ko'chirish, tasvir sifatini oshirish"
+msgstr "Júz generaciyası, uslubtı kóshiriw, súwret sapasın asırıw"
+
+#: core/views.py:72
+msgid "Diffuziya modeli"
+msgstr "Diffuziya modeli"
+
+#: core/views.py:73
+msgid "Shovqindan boshlab, bosqichma-bosqich aniq tasvir hosil qiladi."
+msgstr "Shawqınnan baslap, basqıshpa-basqısh anıq súwret payda etedi."
+
+#: core/views.py:74
+msgid ""
+"Diffuziya modeli avval tasvirga shovqin qo'shishni, so'ngra uni teskari "
+"yo'nalishda tozalashni o'rganadi. Generatsiyada u sof shovqindan boshlab, "
+"har qadamda biroz tozalab, oxir-oqibat aniq tasvir yaratadi. Stable "
+"Diffusion va DALL-E shu asosda ishlaydi."
+msgstr ""
+"Diffuziya modeli aldın súwretke shawqın qosıwdı, sońınan onı keri baǵdarda "
+"tazalawdı úyrenedi. Generaciyada ol sap shawqınnan baslap, hár qádemde biraz"
+" tazalap, aqır-aqıbet anıq súwret jaratadı. Stable Diffusion hám DALL-E usı "
+"tiykarda isleydi."
+
+#: core/views.py:75
+msgid "Matndan tasvir, inpainting, tasvirni kengaytirish"
+msgstr "Teksten súwret, inpainting, súwretti keńeytiw"
+
+#: core/views.py:76
+msgid "Transformer arxitekturasi"
+msgstr "Transformer arxitekturası"
+
+#: core/views.py:77
+msgid "\"Attention\" mexanizmi orqali kontekstdagi bog'lanishlarni topadi."
+msgstr "\"Attention\" mexanizmi arqalı konteksttegi baylanıslardı tabadı."
+
+#: core/views.py:78
+msgid ""
+"Transformer ma'lumotni ketma-ket emas, parallel qayta ishlaydi. \"Self-"
+"attention\" har bir element boshqalarga qanchalik bog'liqligini hisoblaydi. "
+"Bu arxitektura matn, tasvir (ViT) va audioda ham asos bo'ldi."
+msgstr ""
+"Transformer maǵlıwmattı izbe-iz emes, parallel qayta isleydi. \"Self-"
+"attention\" hár bir element basqalarǵa qanshelli baylanıslı ekenin "
+"esaplaydı. Bul arxitektura tekst, súwret (ViT) hám audioda da tiykar boldı."
+
+#: core/views.py:79
+msgid "Til modellari, ViT, multimodal tizimlar"
+msgstr "Til modelleri, ViT, multimodal sistemalar"
+
+#: core/views.py:80
+msgid "Nutqni aniqlash modeli"
+msgstr "Sóylewdi anıqlaw modeli"
+
+#: core/views.py:81
+msgid "Audioni matnga aylantiradi, 90+ tilni qo'llab-quvvatlaydi."
+msgstr "Audionı tekstke aylandıradı, 90+ tildi qollap-quwwatlaydı."
+
+#: core/views.py:82
+msgid ""
+"Whisper audioni spektrogrammaga aylantirib, transformer orqali matnga "
+"o'giradi. 680 ming soatlik turli tildagi audio asosida o'qitilgani uchun "
+"shovqinli muhitda ham yaxshi ishlaydi."
+msgstr ""
+"Whisper audionı spektrogrammaǵa aylandırıp, transformer arqalı tekstke "
+"ógeredi. 680 mıń saatlıq túrli tildegi audio tiykarında oqıtılǵanı ushın "
+"shawqınlı ortalıqta da jaqsı isleydi."
+
+#: core/views.py:83
+msgid "Subtitr yaratish, ovozli yordamchilar, tarjima"
+msgstr "Subtitr jaratıw, dawıslı járdemshiler, awdarma"
+
+#: core/views.py:84
+msgid "Tasvir-matn bog'lovchi"
+msgstr "Súwret-tekst baylanıstırıwshı"
+
+#: core/views.py:85
+msgid "Tasvir va matnni bitta umumiy makonda bog'laydi."
+msgstr "Súwret hám tekstti bir ulıwma keńislikte baylaydı."
+
+#: core/views.py:86
+msgid ""
+"CLIP tasvir va uning matnli tavsifini bir vektor makoniga joylashtiradi, "
+"shunda mos juftliklar yaqin turadi. Bu modelga oldindan ko'rmagan toifalarni"
+" ham tanib olish (zero-shot) imkonini beradi."
+msgstr ""
+"CLIP súwret hám onıń tekstli táriypin bir vektor keńisligine jaylastıradı, "
+"sonda sáykes jupların jaqın turadı. Bul modelge aldınnan kórmegen "
+"kategoriyalardı da tanıw (zero-shot) múmkinshiligin beredi."
+
+#: core/views.py:87
+msgid "Tasvirni qidirish, nol-misolli tasnif, generativ modellarni boshqarish"
+msgstr ""
+"Súwretti izlew, nol-mısallı klassifikaciya, generativ modellerdi basqarıw"
+
+#: core/views.py:92
+msgid "Tasvir tasnifi"
+msgstr "Súwret klassifikaciyası"
+
+#: core/views.py:94
+msgid "Matn"
+msgstr "Tekst"
+
+#: core/views.py:94
+msgid "Tarjima"
+msgstr "Awdarma"
+
+#: core/views.py:95
+msgid "Tasnif"
+msgstr "Klassifikaciya"
+
+#: core/views.py:96
+msgid "Tasvir+Matn"
+msgstr "Súwret+Tekst"
+
+#: core/views.py:96
+msgid "Bog'lash"
+msgstr "Baylanıs"
+
+#: core/views.py:97
+msgid "Nutq"
+msgstr "Sóylew"
+
+#: core/views.py:98
+msgid "Matndan tasvir"
+msgstr "Teksten súwret"
+
+#: core/views.py:99 core/views.py:108
+msgid "Video generatsiya"
+msgstr "Video generaciya"
+
+#: core/views.py:104
+msgid "Tibbiy diagnostika"
+msgstr "Medicinalıq diagnostika"
+
+#: core/views.py:105
+msgid ""
+"Rentgen va MRT tasvirlarida kasalliklarni aniqlash, shifokorlarga yordam "
+"berish."
+msgstr ""
+"Rentgen hám MRT súwretlerinde keselliklerdi anıqlaw, shıpakerlerge járdem "
+"beriw."
+
+#: core/views.py:106
+msgid "Ovozli yordamchilar"
+msgstr "Dawıslı járdemshiler"
+
+#: core/views.py:107
+msgid ""
+"Nutqni tushunish va javob berish — Siri, Alexa va boshqa tizimlar asosi."
+msgstr ""
+"Sóylewdi túsiniw hám juwap beriw — Siri, Alexa hám basqa sistemalar tiykarı."
+
+#: core/views.py:109
+msgid ""
+"Matnli tavsifdan to'liq video yaratish, animatsiya va kontent ishlab "
+"chiqarish."
+msgstr ""
+"Tekstli táriypten tolıq video jaratıw, animaciya hám kontent islep shıǵarıw."
+
+#: core/views.py:110
+msgid "Kontent moderatsiyasi"
+msgstr "Kontent moderaciyası"
+
+#: core/views.py:111
+msgid "Ijtimoiy tarmoqlarda nomaqbul tasvir va videolarni avtomatik aniqlash."
+msgstr "Social tarmaqlarda nomaqul súwret hám videolardı avtomat anıqlaw."
+
+#: core/views.py:112
+msgid "Musiqa yaratish"
+msgstr "Muzıka jaratıw"
+
+#: core/views.py:113
+msgid ""
+"AI yangi musiqa kompozitsiyalari va ovoz effektlarini generatsiya qiladi."
+msgstr ""
+"AI jańa muzıka kompoziciyaların hám dawıs effektlerin generaciyalaydı."
+
+#: core/views.py:114
+msgid "Avtonom transport"
+msgstr "Avtonom transport"
+
+#: core/views.py:115
+msgid "Real vaqtda video oqimini tahlil qilib, yo'l va to'siqlarni aniqlash."
+msgstr "Real waqıtta video aǵımın talqılap, jol hám tosqınlıqlardı anıqlaw."
+
+#: core/views.py:120
+msgid "Tasvir qanday qayta ishlanadi"
+msgstr "Súwret qalay qayta islenedi"
+
+#: core/views.py:121
+msgid "Piksellar"
+msgstr "Pikseller"
+
+#: core/views.py:121
+msgid "Filtrlar / patchlar"
+msgstr "Filtrler / patchlar"
+
+#: core/views.py:121
+msgid "Xususiyatlar"
+msgstr "Ózgeshelikler"
+
+#: core/views.py:121
+msgid "Tasnif yoki generatsiya"
+msgstr "Klassifikaciya yamasa generaciya"
+
+#: core/views.py:122
+msgid "Audio qanday qayta ishlanadi"
+msgstr "Audio qalay qayta islenedi"
+
+#: core/views.py:123
+msgid "To'lqin shakli"
+msgstr "Tolqın formasi"
+
+#: core/views.py:123
+msgid "Spektrogramma"
+msgstr "Spektrogramma"
+
+#: core/views.py:123
+msgid "Vaqtli xususiyatlar"
+msgstr "Waqıtlı ózgeshelikler"
+
+#: core/views.py:123
+msgid "Matn yoki ovoz"
+msgstr "Tekst yamasa dawıs"
+
+#: core/views.py:124
+msgid "Video qanday qayta ishlanadi"
+msgstr "Video qalay qayta islenedi"
+
+#: core/views.py:125
+msgid "Kadrlar"
+msgstr "Kadrlar"
+
+#: core/views.py:125
+msgid "Fazoviy-vaqtli tahlil"
+msgstr "Keńislik-waqıt talqılawı"
+
+#: core/views.py:125
+msgid "Harakat"
+msgstr "Háreket"
+
+#: core/views.py:125
+msgid "Tushunish yoki generatsiya"
+msgstr "Túsiniw yamasa generaciya"
+
+#: templates/base.html:7 templates/base.html:49
+msgid "Multimedia tizimlariga qo'llaniladigan AI modellari"
+msgstr "Multimedia sistemalarına qollanılatuǵın AI modelleri"
+
+#: templates/base.html:8
+msgid "Tasvir, audio va video uchun AI modellari"
+msgstr "Súwret, audio hám video ushın AI modelleri"
+
+#: templates/base.html:24
+msgid "Modellar"
+msgstr "Modeller"
+
+#: templates/base.html:25
+msgid "Chuqurroq"
+msgstr "Tereńirek"
+
+#: templates/base.html:26
+msgid "Demolar"
+msgstr "Demolar"
+
+#: templates/base.html:27
+msgid "Tarix"
+msgstr "Tariyx"
+
+#: templates/base.html:28
+msgid "Taqqoslash"
+msgstr "Salıstırıw"
+
+#: templates/base.html:29
+msgid "Rasmni aniqlash"
+msgstr "Súwretti anıqlaw"
+
+#: templates/base.html:30 templates/home.html:207
+msgid "Qo'llanilishi"
+msgstr "Qollanılıwı"
+
+#: templates/base.html:31 templates/home.html:17
+msgid "AI bilan suhbat"
+msgstr "AI menen sáwbet"
+
+#: templates/base.html:51
+msgid "Ta'lim maqsadida yaratilgan loyiha"
+msgstr "Bilimlendiriw maqsetinde jaratılǵan joybar"
+
+#: templates/home.html:9
+msgid "Tasvir · Audio · Video"
+msgstr "Súwret · Audio · Video"
+
+#: templates/home.html:11
+msgid "Multimedia tizimlariga qo'llaniladigan"
+msgstr "Multimedia sistemalarına qollanılatuǵın"
+
+#: templates/home.html:12
+msgid "AI modellari"
+msgstr "AI modelleri"
+
+#: templates/home.html:14
+msgid ""
+"Sun'iy intellekt tasvirni ko'radi, ovozni eshitadi va videoni tushunadi. "
+"Ushbu modellar qanday ishlashini o'rganing, taqqoslang va AI yordamchidan "
+"so'rang."
+msgstr ""
+"Jasalma intellekt súwretti kóredi, dawıstı esitedi hám videonı túsinedi. Bul"
+" modellerdiń qalay islewin úyreniń, salıstırıń hám AI járdemshiden sorań."
+
+#: templates/home.html:16
+msgid "Modellarni ko'rish"
+msgstr "Modellerdi kóriw"
+
+#: templates/home.html:20 templates/home.html:205 templates/home.html:216
+msgid "Modallik"
+msgstr "Modallıq"
+
+#: templates/home.html:21
+msgid "Asosiy model"
+msgstr "Tiykarǵı model"
+
+#: templates/home.html:22
+msgid "AlexNet yili"
+msgstr "AlexNet jılı"
+
+#: templates/home.html:32
+msgid "Uchta modallik, bitta maqsad"
+msgstr "Úsh modallıq, bir maqset"
+
+#: templates/home.html:33
+msgid ""
+"Multimedia AI uch oqim bilan ishlaydi. Har biri o'ziga xos model "
+"arxitekturasiga ega."
+msgstr ""
+"Multimedia AI úsh aǵıs penen isleydi. Hár biri ózine tán model "
+"arxitekturasına iye."
+
+#: templates/home.html:42
+msgid ""
+"Tasvirni tanib olish, segmentatsiya va generatsiya. CNN, ViT, GAN va "
+"diffuziya modellari."
+msgstr ""
+"Súwretti tanıw, segmentaciya hám generaciya. CNN, ViT, GAN hám diffuziya "
+"modelleri."
+
+#: templates/home.html:51
+msgid ""
+"Nutqni matnga aylantirish, ovoz sintezi va musiqa generatsiyasi. Whisper, "
+"Wav2Vec, TTS."
+msgstr ""
+"Sóylewdi tekstke aylandırıw, dawıs sintezi hám muzıka generaciyası. Whisper,"
+" Wav2Vec, TTS."
+
+#: templates/home.html:60
+msgid ""
+"Videoni tahlil qilish, harakatni aniqlash va video generatsiya. Sora, "
+"kadrlar interpolyatsiyasi."
+msgstr ""
+"Videonı talqılaw, háreketti anıqlaw hám video generaciya. Sora, kadrlar "
+"interpolyaciyası."
+
+#: templates/home.html:70
+msgid "Har bir modallik qanday qayta ishlanadi"
+msgstr "Hár bir modallıq qalay qayta islenedi"
+
+#: templates/home.html:71
+msgid ""
+"Tasvir, audio va video xom signaldan modelga tushunarli ko'rinishga qanday "
+"o'tadi."
+msgstr ""
+"Súwret, audio hám video shiyki signaldan modelge túsinikli kóriniske qalay "
+"ótedi."
+
+#: templates/home.html:92
+msgid "Asosiy modellar — chuqurroq"
+msgstr "Tiykarǵı modeller — tereńirek"
+
+#: templates/home.html:93
+msgid ""
+"Har bir modelni ochib, qanday ishlashi va qayerda qo'llanilishini o'qing."
+msgstr "Hár bir modeldi ashıp, qalay islewin hám qayerde qollanılıwın oqıń."
+
+#: templates/home.html:106
+msgid "Qo'llanilishi:"
+msgstr "Qollanılıwı:"
+
+#: templates/home.html:117
+msgid "Interaktiv demolar"
+msgstr "Interaktiv demolar"
+
+#: templates/home.html:118
+msgid "Modellar qanday ishlashini o'zingiz boshqarib ko'ring."
+msgstr "Modeller qalay islewin ózińiz basqarıp kóriń."
+
+#: templates/home.html:122
+msgid "Diffuziya: shovqindan tasvirga"
+msgstr "Diffuziya: shawqınnan súwretke"
+
+#: templates/home.html:123
+msgid ""
+"Slayderni suring — model shovqinni bosqichma-bosqich tasvirga aylantiradi."
+msgstr ""
+"Slayderdi súyreń — model shawqındı basqıshpa-basqısh súwretke aylandıradı."
+
+#: templates/home.html:126
+msgid "Shovqin"
+msgstr "Shawqın"
+
+#: templates/home.html:130
+msgid "Qadam"
+msgstr "Qádem"
+
+#: templates/home.html:133
+msgid "CNN: konvolyutsiya filtri"
+msgstr "CNN: konvolyuciya filtri"
+
+#: templates/home.html:134
+msgid ""
+"Filtr ustiga bosing — u tasvir bo'ylab siljib, xususiyatlarni ajratadi."
+msgstr ""
+"Filtr ústine basıń — ol súwret boylap jıljıp, ózgesheliklerdi ajıratadı."
+
+#: templates/home.html:137
+msgid "Filtrlarni ishga tushirish"
+msgstr "Filtrlerdi iske túsiriw"
+
+#: templates/home.html:139
+msgid "Filtr: qirralarni aniqlash"
+msgstr "Filtr: shetlerdi anıqlaw"
+
+#: templates/home.html:148
+msgid "Modellar tarixi"
+msgstr "Modeller tariyxı"
+
+#: templates/home.html:149
+msgid ""
+"2012-yildan bugungi kungacha multimedia AI rivojlanishidagi asosiy "
+"bosqichlar."
+msgstr ""
+"2012-jıldan búgingi kúnge shekem multimedia AI rawajlanıwındaǵı tiykarǵı "
+"basqıshlar."
+
+#: templates/home.html:169
+msgid "Tasvirni tanib olish aniqligi"
+msgstr "Súwretti tanıw dálligi"
+
+#: templates/home.html:170
+#, python-format
+msgid ""
+"ImageNet test to'plamidagi Top-5 aniqlik (%% ). Past xato = yaxshi model."
+msgstr ""
+"ImageNet test toplamındaǵı Top-5 dállik (%% ). Tómen qátelik = jaqsı model."
+
+#: templates/home.html:182
+msgid "Generativ modellar: tezlik va sifat"
+msgstr "Generativ modeller: tezlik hám sapa"
+
+#: templates/home.html:183
+msgid "GAN, diffuziya va avtoregressiv modellarni taqqoslash (nisbiy baho)."
+msgstr ""
+"GAN, diffuziya hám avtoregressiv modellerdi salıstırıw (salıstırмалı "
+"baha).GAN, diffuziya hám avtoregressiv modellerdi salıstırıw (salıstırмалы "
+"baha)."
+
+#: templates/home.html:189
+msgid "Diffuziya"
+msgstr "Diffuziya"
+
+#: templates/home.html:190
+msgid "Avtoregressiv"
+msgstr "Avtoregressiv"
+
+#: templates/home.html:195
+msgid "Modellar jadvali"
+msgstr "Modeller kestesi"
+
+#: templates/home.html:196
+msgid ""
+"Asosiy modellarni yil, turi, hajmi va qo'llanilishi bo'yicha solishtiring."
+msgstr ""
+"Tiykarǵı modellerdi jıl, túri, kólemi hám qollanılıwı boyınsha salıstırıń."
+
+#: templates/home.html:202 templates/home.html:213 templates/home.html:456
+msgid "Model"
+msgstr "Model"
+
+#: templates/home.html:203 templates/home.html:214
+msgid "Yil"
+msgstr "Jıl"
+
+#: templates/home.html:204 templates/home.html:215
+msgid "Turi"
+msgstr "Túri"
+
+#: templates/home.html:206 templates/home.html:217
+msgid "Hajmi"
+msgstr "Kólemi"
+
+#: templates/home.html:218
+msgid "Qollanilishi"
+msgstr "Qollanılıwı"
+
+#: templates/home.html:230
+msgid "Hayotdagi qo'llanilishi"
+msgstr "Turmıstaǵı qollanılıwı"
+
+#: templates/home.html:231
+msgid "Multimedia AI modellari bugun qayerda ishlatilmoqda."
+msgstr "Multimedia AI modelleri búgin qayerde isletilmekte."
+
+#: templates/home.html:248
+msgid "Multimodal pipeline — jonli sxema"
+msgstr "Multimodal pipeline — janlı sxema"
+
+#: templates/home.html:249
+msgid ""
+"Tasvir, audio va video signallari qanday qilib yagona neyron yadroga oqib "
+"o'tishini kuzating."
+msgstr ""
+"Súwret, audio hám video signalları qalay etip birdey neyron yadroǵa aǵıp "
+"ótiwin baqlań."
+
+#: templates/home.html:257
+msgid "Transformer yadrosi"
+msgstr "Transformer yadrosı"
+
+#: templates/home.html:258
+msgid "Natija"
+msgstr "Nátiyje"
+
+#: templates/home.html:258
+msgid "tasnif · matn · generatsiya"
+msgstr "klassifikaciya · tekst · generaciya"
+
+#: templates/home.html:267
+msgid "Rasmni aniqlash tizimi"
+msgstr "Súwretti anıqlaw sisteması"
+
+#: templates/home.html:268
+msgid ""
+"Rasm yuklang yoki kamera orqali suratga oling — AI obyektni aniqlaydi va "
+"ishonchlilik foizini ko'rsatadi."
+msgstr ""
+"Súwret júkleń yamasa kamera arqalı súwretke alıń — AI obyektti anıqlaydı hám"
+" isenimlilik procentin kórsetedi."
+
+#: templates/home.html:272
+msgid "Rasm yuklash"
+msgstr "Súwret júklew"
+
+#: templates/home.html:273
+msgid "Kamera orqali"
+msgstr "Kamera arqalı"
+
+#: templates/home.html:278
+#| msgid "AI modellari"
+msgid "AI model:"
+msgstr "AI model:"
+
+#: templates/home.html:281
+msgid "Tez"
+msgstr "Tez"
+
+#: templates/home.html:282
+msgid "Yengil · ~5 MB · tez yuklanadi"
+msgstr "Jeńil · ~5 MB · tez júklenedi"
+
+#: templates/home.html:283
+#| msgid "Aniqlik darajasi"
+msgid "Aniqlik: o'rtacha"
+msgstr "Dállik: orta"
+
+#: templates/home.html:286
+msgid "Balans"
+msgstr "Balans"
+
+#: templates/home.html:287
+msgid "Standart · ~16 MB"
+msgstr "Standart · ~16 MB"
+
+#: templates/home.html:288
+#| msgid "Aniqlik darajasi"
+msgid "Aniqlik: yaxshi"
+msgstr "Dállik: jaqsı"
+
+#: templates/home.html:291
+#| msgid "Aniqlik"
+msgid "Aniq"
+msgstr "Anıq"
+
+#: templates/home.html:292
+msgid "Og'ir · ~16 MB · sekinroq"
+msgstr "Awır · ~16 MB · ásteraq"
+
+#: templates/home.html:293
+msgid "Aniqlik: eng yuqori"
+msgstr "Dállik: eń joqarı"
+
+#: templates/home.html:304
+msgid "Rasmni bu yerga tashlang"
+msgstr "Súwretti usı jerge taslań"
+
+#: templates/home.html:305
+msgid "yoki bosib tanlang · JPG, PNG, JPEG"
+msgstr "yamasa basıp saylań · JPG, PNG, JPEG"
+
+#: templates/home.html:315
+msgid "Kamerani yoqish"
+msgstr "Kameranı qosıw"
+
+#: templates/home.html:319
+msgid "Suratga olish"
+msgstr "Súwretke alıw"
+
+#: templates/home.html:320
+msgid "To'xtatish"
+msgstr "Toqtatıw"
+
+#: templates/home.html:336 templates/home.html:442
+msgid "Model yuklanmoqda..."
+msgstr "Model júklenbekte..."
+
+#: templates/home.html:339 templates/home.html:445
+msgid "Aniqlangan obyekt"
+msgstr "Anıqlanǵan obyekt"
+
+#: templates/home.html:356
+msgid "Aniqlik"
+msgstr "Dállik"
+
+#: templates/home.html:364
+msgid "Boshqa ehtimollar"
+msgstr "Basqa itimallar"
+
+#: templates/home.html:371
+msgid "Neyron tarmoq faolligi"
+msgstr "Neyron tarmaq aktivligi"
+
+#: templates/home.html:373
+msgid "3D vizualizatsiya — model qatlamlari orqali signal oqimi"
+msgstr "3D vizualizaciya — model qatlamları arqalı signal aǵımı"
+
+#: templates/home.html:376
+msgid "CNN tahlil bosqichlari"
+msgstr "CNN talqılaw basqıshları"
+
+#: templates/home.html:378
+msgid "Rasm konvolyutsion qatlamlardan qanday o'tishi"
+msgstr "Súwrettiń konvolyucion qatlamlardan qalay ótiwi"
+
+#: templates/home.html:385
+msgid "AI tahlili"
+msgstr "AI talqılawı"
+
+#: templates/home.html:391
+msgid "Batafsil ma'lumot tayyorlanmoqda..."
+msgstr "Tolıq maǵlıwmat tayarlanbaqta..."
+
+#: templates/home.html:396
+msgid "Boshqa rasm"
+msgstr "Basqa súwret"
+
+#: templates/home.html:398
+msgid ""
+"Eslatma: aniqlash brauzeringizda ishlaydi (MobileNetV2, ImageNet), batafsil "
+"ma'lumot esa AI orqali siz tanlagan tilda yaratiladi."
+msgstr ""
+"Eskertiw: anıqlaw brauzerińizde isleydi (MobileNetV2, ImageNet), tolıq "
+"maǵlıwmat bolsa AI arqalı siz saylaǵan tilde jaratıladı."
+
+#: templates/home.html:406
+msgid "AI yordamchidan so'rang"
+msgstr "AI járdemshiden sorań"
+
+#: templates/home.html:407
+msgid ""
+"Multimedia AI modellari haqida savol bering. Javob siz tanlagan tilda "
+"keladi."
+msgstr ""
+"Multimedia AI modelleri haqqında soraw beriń. Juwap siz saylaǵan tilde "
+"keledi."
+
+#: templates/home.html:411
+msgid "Multimedia AI yordamchisi"
+msgstr "Multimedia AI járdemshisi"
+
+#: templates/home.html:416
+msgid ""
+"Salom! Men multimedia AI modellari bo'yicha yordamchiman. Diffuziya "
+"modellari, Whisper yoki video generatsiya haqida so'rang."
+msgstr ""
+"Sálem! Men multimedia AI modelleri boyınsha járdemshimen. Diffuziya "
+"modelleri, Whisper yamasa video generaciya haqqında sorań."
+
+#: templates/home.html:420
+msgid "Diffuziya modeli qanday ishlaydi?"
+msgstr "Diffuziya modeli qalay isleydi?"
+
+#: templates/home.html:421
+msgid "CNN va ViT farqi nimada?"
+msgstr "CNN hám ViT parqı nede?"
+
+#: templates/home.html:422
+msgid "Whisper nima qiladi?"
+msgstr "Whisper ne isleydi?"
+
+#: templates/home.html:425
+msgid "Savolingizni yozing..."
+msgstr "Sorawıńızdı jazıń..."
+
+#: templates/home.html:426
+msgid "Yuborish"
+msgstr "Jiberiw"
+
+#: templates/home.html:440
+msgid "Kechirasiz, xatolik yuz berdi. Qayta urinib koring."
+msgstr "Keshiriń, qátelik júz berdi. Qayta urınıp kóriń."
+
+#: templates/home.html:441
+msgid "Oylayapman..."
+msgstr "Oylap atırman..."
+
+#: templates/home.html:443
+msgid "Tahlil qilinmoqda..."
+msgstr "Talqılanbaqta..."
+
+#: templates/home.html:444
+msgid "Aniqlandi"
+msgstr "Anıqlandı"
+
+#: templates/home.html:446
+msgid "Aniqlik darajasi"
+msgstr "Dállik dárejesi"
+
+#: templates/home.html:447
+msgid "Kamera topilmadi yoki ruxsat berilmadi."
+msgstr "Kamera tabılmadı yamasa ruqsat berilmedi."
+
+#: templates/home.html:448
+msgid "Faqat JPG, PNG yoki JPEG rasm yuklang."
+msgstr "Tek JPG, PNG yamasa JPEG súwret júkleń."
+
+#: templates/home.html:449
+msgid "Rasmni tahlil qilishda xatolik. Qayta urinib koring."
+msgstr "Súwretti talqılawda qátelik. Qayta urınıp kóriń."
+
+#: templates/home.html:450
+msgid "AI modelni yuklab bolmadi. Internet aloqasini tekshiring."
+msgstr "AI modeldi júklep bolmadı. Internet baylanısın teksheriń."
+
+#: templates/home.html:451
+msgid "Batafsil malumot olishda xatolik yuz berdi."
+msgstr "Tolıq maǵlıwmat alıwda qátelik júz berdi."
+
+#: templates/home.html:452
+msgid "Batafsil malumot tayyorlanmoqda..."
+msgstr "Tolıq maǵlıwmat tayarlanbaqta..."
+
+#: templates/home.html:453
+msgid "Tahlil tugadi"
+msgstr "Talqılaw tamamlandı"
+
+#: templates/home.html:454
+msgid "Qayta urinish"
+msgstr "Qayta urınıw"
+
+#: templates/home.html:455
+msgid ""
+"Ishonch past — natija notogri bolishi mumkin. Aniqroq yoki yoruqroq rasm "
+"sinab koring."
+msgstr ""
+"Isenim tómen — nátiyje nadurıs bolıwı múmkin. Anıǵıraq yamasa jarıqıraq "
+"súwret sınap kóriń."
+
+# ===== Vision-mode strings (Aqlli AI / multimodal) =====
+
+msgid "Aqlli AI"
+msgstr "Aqılı AI"
+
+msgid "Vision · pullik · serverda"
+msgstr "Vision · pullı · serverde"
+
+msgid "Aniqlik: eng yuqori, til bilan"
+msgstr "Dállik: eń joqarı, til menen"
+
+msgid "Multimodal vision model"
+msgstr "Multimodal vision model"
+
+msgid ""
+"Eslatma: oddiy aniqlash brauzeringizda ishlaydi (MobileNetV2, ImageNet). "
+"\"Aqlli AI\" rejimi server orqali multimodal vision modeliga so'rov yuboradi "
+"(pullik) — natija siz tanlagan tilda batafsil javob sifatida keladi."
+msgstr ""
+"Eskertiw: ápiwayı anıqlaw brauzerińizde isleydi (MobileNetV2, ImageNet). "
+"\"Aqılı AI\" rejimi server arqalı multimodal vision modeline soraw "
+"jiberedi (pullı) — nátiyje siz saylaǵan tilde tolıq juwap sıpatında keledi."
+
+msgid "AI rasmni korib chiqmoqda..."
+msgstr "AI súwretti kórip atır..."
+
+msgid ""
+"Vision AI bilan aloqa ornatib bolmadi. Internet yoki API kalitni tekshiring."
+msgstr ""
+"Vision AI menen baylanıs ornatıp bolmadı. Internet yamasa API gilttı "
+"tekseriń."
+
+msgid "Rasm juda katta (max 2MB). Kichikroq rasm yuklang."
+msgstr "Súwret júdá úlken (max 2MB). Kishirek súwret júkleń."
+
+#~ msgid "Sxema"
+#~ msgstr "Sxema"

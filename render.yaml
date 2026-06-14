@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: multimedia-ai
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt && python download_models.py && python manage.py collectstatic --noinput && python manage.py migrate && python manage.py create_default_superuser"
+    startCommand: "gunicorn config.wsgi:application"
+    envVars:
+      - key: DJANGO_DEBUG
+        value: "False"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: OPENROUTER_API_KEY
+        sync: false        # set this manually in the Render dashboard (secret)
+      - key: OPENROUTER_MODEL
+        value: "deepseek/deepseek-v4-flash"
+      - key: PYTHON_VERSION
+        value: "3.12.4"
+      # Optional admin auto-creation — set these in the dashboard if you want an admin
+      - key: DJANGO_SUPERUSER_USERNAME
+        sync: false
+      - key: DJANGO_SUPERUSER_EMAIL
+        sync: false
+      - key: DJANGO_SUPERUSER_PASSWORD
+        sync: false

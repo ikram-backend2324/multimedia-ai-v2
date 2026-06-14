@@ -1,0 +1,306 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 13:54+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: config/settings.py:68
+msgid "O'zbekcha"
+msgstr ""
+
+#: config/settings.py:69
+msgid "Qaraqalpaqsha"
+msgstr ""
+
+#: core/views.py:33 core/views.py:37 core/views.py:43 templates/home.html:41
+#: templates/home.html:127
+msgid "Tasvir"
+msgstr ""
+
+#: core/views.py:34
+msgid ""
+"Chuqur CNN ImageNet musobaqasida g'alaba qozonib, zamonaviy AI davrini "
+"boshladi."
+msgstr ""
+
+#: core/views.py:35 core/views.py:49
+msgid "Generatsiya"
+msgstr ""
+
+#: core/views.py:36
+msgid ""
+"Generativ raqobat tarmoqlari — ikki tarmoq bir-biriga qarshi o'qib, "
+"realistik tasvir yaratadi."
+msgstr ""
+
+#: core/views.py:38
+msgid ""
+"Residual bog'lanishlar 150+ qatlamli tarmoqlarni o'qitishni mumkin qildi."
+msgstr ""
+
+#: core/views.py:39 core/views.py:47 templates/home.html:50
+#: templates/home.html:128
+msgid "Audio"
+msgstr ""
+
+#: core/views.py:40
+msgid ""
+"Tabiiy ovoz sintezi uchun xom audio to'lqinini generatsiya qiluvchi model."
+msgstr ""
+
+#: core/views.py:41
+msgid "Arxitektura"
+msgstr ""
+
+#: core/views.py:42
+msgid ""
+"\"Attention is all you need\" — barcha modalliklar uchun asos bo'lgan "
+"arxitektura."
+msgstr ""
+
+#: core/views.py:44
+msgid ""
+"Vision Transformer tasvirni patchlarga bo'lib, transformer bilan qayta "
+"ishlaydi."
+msgstr ""
+
+#: core/views.py:45
+msgid "Multimodal"
+msgstr ""
+
+#: core/views.py:46
+msgid "Tasvir va matnni bitta makonda bog'lab, nol-misolli tasnifni ochdi."
+msgstr ""
+
+#: core/views.py:48
+msgid ""
+"680 ming soat audio asosida o'qitilgan ko'p tilli nutqni aniqlash modeli."
+msgstr ""
+
+#: core/views.py:50
+msgid ""
+"Ochiq diffuziya modeli matndan yuqori sifatli tasvir yaratishni "
+"ommalashtirdi."
+msgstr ""
+
+#: core/views.py:51 templates/home.html:59 templates/home.html:129
+msgid "Video"
+msgstr ""
+
+#: core/views.py:52
+msgid ""
+"Matndan realistik video generatsiya qiluvchi diffuzion transformer modeli."
+msgstr ""
+
+#: templates/base.html:7 templates/base.html:46
+msgid "Multimedia tizimlariga qo'llaniladigan AI modellari"
+msgstr ""
+
+#: templates/base.html:8
+msgid "Tasvir, audio va video uchun sun"
+msgstr ""
+
+#: templates/base.html:24
+msgid "Modellar"
+msgstr ""
+
+#: templates/base.html:25
+msgid "Tarix"
+msgstr ""
+
+#: templates/base.html:26
+msgid "Taqqoslash"
+msgstr ""
+
+#: templates/base.html:27
+msgid "Sxema"
+msgstr ""
+
+#: templates/base.html:28 templates/home.html:17
+msgid "AI bilan suhbat"
+msgstr ""
+
+#: templates/base.html:48
+msgid "Ta'lim maqsadida yaratilgan loyiha"
+msgstr ""
+
+#: templates/home.html:9
+msgid "Tasvir · Audio · Video"
+msgstr ""
+
+#: templates/home.html:11
+msgid "Multimedia tizimlariga qo'llaniladigan"
+msgstr ""
+
+#: templates/home.html:12
+msgid "AI modellari"
+msgstr ""
+
+#: templates/home.html:14
+msgid ""
+"Sun'iy intellekt tasvirni ko'radi, ovozni eshitadi va videoni tushunadi. "
+"Ushbu modellar qanday ishlashini o'rganing, taqqoslang va AI yordamchidan "
+"so'rang."
+msgstr ""
+
+#: templates/home.html:16
+msgid "Modellarni ko'rish"
+msgstr ""
+
+#: templates/home.html:20
+msgid "Modallik"
+msgstr ""
+
+#: templates/home.html:21
+msgid "Asosiy model"
+msgstr ""
+
+#: templates/home.html:22
+msgid "AlexNet yili"
+msgstr ""
+
+#: templates/home.html:32
+msgid "Uchta modallik, bitta maqsad"
+msgstr ""
+
+#: templates/home.html:33
+msgid ""
+"Multimedia AI uch oqim bilan ishlaydi. Har biri o'ziga xos model "
+"arxitekturasiga ega."
+msgstr ""
+
+#: templates/home.html:42
+msgid ""
+"Tasvirni tanib olish, segmentatsiya va generatsiya. CNN, ViT, GAN va "
+"diffuziya modellari."
+msgstr ""
+
+#: templates/home.html:51
+msgid ""
+"Nutqni matnga aylantirish, ovoz sintezi va musiqa generatsiyasi. Whisper, "
+"Wav2Vec, TTS."
+msgstr ""
+
+#: templates/home.html:60
+msgid ""
+"Videoni tahlil qilish, harakatni aniqlash va video generatsiya. Sora, "
+"kadrlar interpolyatsiyasi."
+msgstr ""
+
+#: templates/home.html:70
+msgid "Modellar tarixi"
+msgstr ""
+
+#: templates/home.html:71
+msgid ""
+"2012-yildan bugungi kungacha multimedia AI rivojlanishidagi asosiy "
+"bosqichlar."
+msgstr ""
+
+#: templates/home.html:91
+msgid "Tasvirni tanib olish aniqligi"
+msgstr ""
+
+#: templates/home.html:92
+#, python-format
+msgid ""
+"ImageNet test to'plamidagi Top-5 aniqlik (%% ). Past xato = yaxshi model."
+msgstr ""
+
+#: templates/home.html:104
+msgid "Generativ modellar: tezlik va sifat"
+msgstr ""
+
+#: templates/home.html:105
+msgid "GAN, diffuziya va avtoregressiv modellarni taqqoslash (nisbiy baho)."
+msgstr ""
+
+#: templates/home.html:111
+msgid "Diffuziya"
+msgstr ""
+
+#: templates/home.html:112
+msgid "Avtoregressiv"
+msgstr ""
+
+#: templates/home.html:121
+msgid "Multimodal pipeline — jonli sxema"
+msgstr ""
+
+#: templates/home.html:122
+msgid ""
+"Tasvir, audio va video signallari qanday qilib yagona neyron yadroga oqib "
+"o'tishini kuzating."
+msgstr ""
+
+#: templates/home.html:130
+msgid "Transformer yadrosi"
+msgstr ""
+
+#: templates/home.html:131
+msgid "Natija"
+msgstr ""
+
+#: templates/home.html:131
+msgid "tasnif · matn · generatsiya"
+msgstr ""
+
+#: templates/home.html:140
+msgid "AI yordamchidan so'rang"
+msgstr ""
+
+#: templates/home.html:141
+msgid ""
+"Multimedia AI modellari haqida savol bering. Javob siz tanlagan tilda keladi."
+msgstr ""
+
+#: templates/home.html:145
+msgid "Multimedia AI yordamchisi"
+msgstr ""
+
+#: templates/home.html:150
+msgid ""
+"Salom! Men multimedia AI modellari bo'yicha yordamchiman. Diffuziya "
+"modellari, Whisper yoki video generatsiya haqida so'rang."
+msgstr ""
+
+#: templates/home.html:154
+msgid "Diffuziya modeli qanday ishlaydi?"
+msgstr ""
+
+#: templates/home.html:155
+msgid "CNN va ViT farqi nimada?"
+msgstr ""
+
+#: templates/home.html:156
+msgid "Whisper nima qiladi?"
+msgstr ""
+
+#: templates/home.html:159
+msgid "Savolingizni yozing..."
+msgstr ""
+
+#: templates/home.html:160
+msgid "Yuborish"
+msgstr ""
+
+#: templates/home.html:173
+msgid "Kechirasiz, xatolik yuz berdi. Qayta urinib ko"
+msgstr ""
+
+#: templates/home.html:174
+msgid "O"
+msgstr ""

@@ -1,0 +1,479 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block content %}
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <div class="eyebrow reveal">{% trans "Tasvir · Audio · Video" %}</div>
+    <h1 class="hero-title reveal">
+      {% trans "Multimedia tizimlariga qo'llaniladigan" %}
+      <span class="grad">{% trans "AI modellari" %}</span>
+    </h1>
+    <p class="hero-sub reveal">{% trans "Sun'iy intellekt tasvirni ko'radi, ovozni eshitadi va videoni tushunadi. Ushbu modellar qanday ishlashini o'rganing, taqqoslang va AI yordamchidan so'rang." %}</p>
+    <div class="hero-cta reveal">
+      <a href="#models" class="btn btn-primary">{% trans "Modellarni ko'rish" %}</a>
+      <a href="#chat" class="btn btn-ghost">{% trans "AI bilan suhbat" %}</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat"><b data-count="3">0</b><span>{% trans "Modallik" %}</span></div>
+      <div class="stat"><b data-count="14">0</b><span>{% trans "Asosiy model" %}</span></div>
+      <div class="stat"><b data-count="2012">0</b><span>{% trans "AlexNet yili" %}</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ===== MODALITIES ===== -->
+<section class="section" id="models">
+  <div class="sec-head reveal">
+    <span class="sec-num">01</span>
+    <h2>{% trans "Uchta modallik, bitta maqsad" %}</h2>
+    <p>{% trans "Multimedia AI uch oqim bilan ishlaydi. Har biri o'ziga xos model arxitekturasiga ega." %}</p>
+  </div>
+  <div class="modal-grid">
+    <article class="mcard reveal" data-mod="img">
+      <div class="mcard-glow"></div>
+      <div class="mcard-ico">
+        <svg viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="28" rx="3"/><circle cx="17" cy="20" r="4"/><path d="M10 34l9-9 6 6 7-8 6 7"/></svg>
+      </div>
+      <h3>{% trans "Tasvir" %}</h3>
+      <p>{% trans "Tasvirni tanib olish, segmentatsiya va generatsiya. CNN, ViT, GAN va diffuziya modellari." %}</p>
+      <ul class="mtags"><li>CNN</li><li>ViT</li><li>GAN</li><li>Diffusion</li></ul>
+    </article>
+    <article class="mcard reveal" data-mod="aud">
+      <div class="mcard-glow"></div>
+      <div class="mcard-ico">
+        <svg viewBox="0 0 48 48"><path d="M6 24h5l4-12 6 28 5-22 4 14 3-8h8"/></svg>
+      </div>
+      <h3>{% trans "Audio" %}</h3>
+      <p>{% trans "Nutqni matnga aylantirish, ovoz sintezi va musiqa generatsiyasi. Whisper, Wav2Vec, TTS." %}</p>
+      <ul class="mtags"><li>Whisper</li><li>Wav2Vec</li><li>TTS</li></ul>
+    </article>
+    <article class="mcard reveal" data-mod="vid">
+      <div class="mcard-glow"></div>
+      <div class="mcard-ico">
+        <svg viewBox="0 0 48 48"><rect x="6" y="12" width="28" height="24" rx="3"/><path d="M34 20l8-5v18l-8-5z"/></svg>
+      </div>
+      <h3>{% trans "Video" %}</h3>
+      <p>{% trans "Videoni tahlil qilish, harakatni aniqlash va video generatsiya. Sora, kadrlar interpolyatsiyasi." %}</p>
+      <ul class="mtags"><li>Sora</li><li>Action Rec.</li><li>Interpolation</li></ul>
+    </article>
+  </div>
+</section>
+
+<!-- ===== MODALITY DEEP-DIVES ===== -->
+<section class="section alt" id="deepdive">
+  <div class="sec-head reveal">
+    <span class="sec-num">02</span>
+    <h2>{% trans "Har bir modallik qanday qayta ishlanadi" %}</h2>
+    <p>{% trans "Tasvir, audio va video xom signaldan modelga tushunarli ko'rinishga qanday o'tadi." %}</p>
+  </div>
+  <div class="dd-grid">
+    {% for d in deepdives %}
+    <div class="dd-card reveal" data-mod="{{ d.mod }}">
+      <h4>{{ d.title }}</h4>
+      <div class="dd-flow">
+        {% for s in d.steps %}
+        <div class="dd-step"><span class="dd-dot"></span><p>{{ s }}</p></div>
+        {% if not forloop.last %}<span class="dd-arrow">→</span>{% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ===== MODEL EXPLAINERS (expandable) ===== -->
+<section class="section" id="explain">
+  <div class="sec-head reveal">
+    <span class="sec-num">03</span>
+    <h2>{% trans "Asosiy modellar — chuqurroq" %}</h2>
+    <p>{% trans "Har bir modelni ochib, qanday ishlashi va qayerda qo'llanilishini o'qing." %}</p>
+  </div>
+  <div class="exp-grid">
+    {% for m in models %}
+    <details class="exp-card reveal" data-mod="{{ m.mod }}">
+      <summary>
+        <span class="exp-name">{{ m.name }}</span>
+        <span class="exp-full">{{ m.full }}</span>
+        <span class="exp-chevron" aria-hidden="true">+</span>
+      </summary>
+      <p class="exp-short">{{ m.short }}</p>
+      <div class="exp-body">
+        <p>{{ m.long }}</p>
+        <div class="exp-use"><b>{% trans "Qo'llanilishi:" %}</b> {{ m.use }}</div>
+      </div>
+    </details>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ===== INTERACTIVE DEMOS ===== -->
+<section class="section alt" id="demos">
+  <div class="sec-head reveal">
+    <span class="sec-num">04</span>
+    <h2>{% trans "Interaktiv demolar" %}</h2>
+    <p>{% trans "Modellar qanday ishlashini o'zingiz boshqarib ko'ring." %}</p>
+  </div>
+  <div class="demo-grid">
+    <div class="demo-card reveal">
+      <h4>{% trans "Diffuziya: shovqindan tasvirga" %}</h4>
+      <p class="demo-sub">{% trans "Slayderni suring — model shovqinni bosqichma-bosqich tasvirga aylantiradi." %}</p>
+      <canvas id="diffCanvas" width="300" height="300"></canvas>
+      <div class="demo-ctrl">
+        <span>{% trans "Shovqin" %}</span>
+        <input type="range" id="diffSlider" min="0" max="100" value="100">
+        <span>{% trans "Tasvir" %}</span>
+      </div>
+      <div class="demo-readout"><span id="diffStep">{% trans "Qadam" %}: 0 / 20</span></div>
+    </div>
+    <div class="demo-card reveal">
+      <h4>{% trans "CNN: konvolyutsiya filtri" %}</h4>
+      <p class="demo-sub">{% trans "Filtr ustiga bosing — u tasvir bo'ylab siljib, xususiyatlarni ajratadi." %}</p>
+      <canvas id="cnnCanvas" width="300" height="300"></canvas>
+      <div class="demo-ctrl">
+        <button id="cnnPlay" class="demo-btn">{% trans "Filtrlarni ishga tushirish" %}</button>
+      </div>
+      <div class="demo-readout"><span id="cnnInfo">{% trans "Filtr: qirralarni aniqlash" %}</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIMELINE ===== -->
+<section class="section alt" id="timeline">
+  <div class="sec-head reveal">
+    <span class="sec-num">05</span>
+    <h2>{% trans "Modellar tarixi" %}</h2>
+    <p>{% trans "2012-yildan bugungi kungacha multimedia AI rivojlanishidagi asosiy bosqichlar." %}</p>
+  </div>
+  <div class="timeline" id="timeline-track">
+    {% for t in timeline %}
+    <div class="tl-item reveal" data-mod="{{ t.mod }}">
+      <div class="tl-year">{{ t.year }}</div>
+      <div class="tl-card">
+        <span class="tl-badge">{{ t.tag }}</span>
+        <h4>{{ t.name }}</h4>
+        <p>{{ t.desc }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ===== COMPARE (animated bar chart) ===== -->
+<section class="section" id="compare">
+  <div class="sec-head reveal">
+    <span class="sec-num">06</span>
+    <h2>{% trans "Tasvirni tanib olish aniqligi" %}</h2>
+    <p>{% trans "ImageNet test to'plamidagi Top-5 aniqlik (% ). Past xato = yaxshi model." %}</p>
+  </div>
+  <div class="chart reveal" id="accChart">
+    {% for b in acc_bars %}
+    <div class="bar-row">
+      <span class="bar-label">{{ b.name }}<em>{{ b.year }}</em></span>
+      <div class="bar-track"><div class="bar-fill" data-val="{{ b.val }}" style="--c:{{ b.color }}"><span>{{ b.val }}%</span></div></div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="sec-head reveal" style="margin-top:5rem">
+    <h2>{% trans "Generativ modellar: tezlik va sifat" %}</h2>
+    <p>{% trans "GAN, diffuziya va avtoregressiv modellarni taqqoslash (nisbiy baho)." %}</p>
+  </div>
+  <div class="radar-wrap reveal">
+    <canvas id="radarCanvas" width="520" height="520"></canvas>
+    <div class="radar-legend">
+      <span><i style="background:var(--img)"></i>GAN</span>
+      <span><i style="background:var(--aud)"></i>{% trans "Diffuziya" %}</span>
+      <span><i style="background:var(--vid)"></i>{% trans "Avtoregressiv" %}</span>
+    </div>
+  </div>
+
+  <div class="sec-head reveal" style="margin-top:5rem">
+    <h2>{% trans "Modellar jadvali" %}</h2>
+    <p>{% trans "Asosiy modellarni yil, turi, hajmi va qo'llanilishi bo'yicha solishtiring." %}</p>
+  </div>
+  <div class="table-wrap reveal">
+    <table class="cmp-table">
+      <thead>
+        <tr>
+          <th>{% trans "Model" %}</th>
+          <th>{% trans "Yil" %}</th>
+          <th>{% trans "Turi" %}</th>
+          <th>{% trans "Modallik" %}</th>
+          <th>{% trans "Hajmi" %}</th>
+          <th>{% trans "Qo'llanilishi" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in table %}
+        <tr class="reveal">
+          <td data-label="{% trans 'Model' %}"><b>{{ r.name }}</b></td>
+          <td data-label="{% trans 'Yil' %}">{{ r.year }}</td>
+          <td data-label="{% trans 'Turi' %}"><span class="tpill">{{ r.type }}</span></td>
+          <td data-label="{% trans 'Modallik' %}">{{ r.mod }}</td>
+          <td data-label="{% trans 'Hajmi' %}">{{ r.params }}</td>
+          <td data-label="{% trans 'Qollanilishi' %}">{{ r.use }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===== USE CASES ===== -->
+<section class="section alt" id="usecases">
+  <div class="sec-head reveal">
+    <span class="sec-num">07</span>
+    <h2>{% trans "Hayotdagi qo'llanilishi" %}</h2>
+    <p>{% trans "Multimedia AI modellari bugun qayerda ishlatilmoqda." %}</p>
+  </div>
+  <div class="uc-grid">
+    {% for u in usecases %}
+    <article class="uc-card reveal" data-mod="{{ u.mod }}">
+      <div class="uc-ico" data-icon="{{ u.icon }}"></div>
+      <h4>{{ u.title }}</h4>
+      <p>{{ u.desc }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ===== ANIMATED SCHEMA ===== -->
+<section class="section alt" id="schema">
+  <div class="sec-head reveal">
+    <span class="sec-num">08</span>
+    <h2>{% trans "Multimodal pipeline — jonli sxema" %}</h2>
+    <p>{% trans "Tasvir, audio va video signallari qanday qilib yagona neyron yadroga oqib o'tishini kuzating." %}</p>
+  </div>
+  <div class="schema reveal">
+    <canvas id="schemaCanvas"></canvas>
+    <div class="schema-labels">
+      <div class="sl sl-in" style="--y:18%"><b>{% trans "Tasvir" %}</b><span>pixels → patches</span></div>
+      <div class="sl sl-in" style="--y:50%"><b>{% trans "Audio" %}</b><span>waveform → spectrogram</span></div>
+      <div class="sl sl-in" style="--y:82%"><b>{% trans "Video" %}</b><span>frames → tokens</span></div>
+      <div class="sl sl-core"><b>{% trans "Transformer yadrosi" %}</b><span>attention</span></div>
+      <div class="sl sl-out"><b>{% trans "Natija" %}</b><span>{% trans "tasnif · matn · generatsiya" %}</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IMAGE DETECTION ===== -->
+<section class="section alt" id="detect">
+  <div class="sec-head reveal">
+    <span class="sec-num">09</span>
+    <h2>{% trans "Rasmni aniqlash tizimi" %}</h2>
+    <p>{% trans "Rasm yuklang yoki kamera orqali suratga oling — AI obyektni aniqlaydi va ishonchlilik foizini ko'rsatadi." %}</p>
+  </div>
+  <div class="det-wrap reveal">
+    <div class="det-tabs" role="tablist">
+      <button class="det-tab active" data-tab="upload">{% trans "Rasm yuklash" %}</button>
+      <button class="det-tab" data-tab="camera">{% trans "Kamera orqali" %}</button>
+    </div>
+
+    <!-- Model selector -->
+    <div class="det-models">
+      <span class="det-models-label">{% trans "AI model:" %}</span>
+      <div class="det-models-grid">
+        <button class="det-model" data-model="fast" data-alpha="0.5">
+          <b>{% trans "Tez" %}</b>
+          <span>{% trans "Yengil · ~5 MB · tez yuklanadi" %}</span>
+          <em>{% trans "Aniqlik: o'rtacha" %}</em>
+        </button>
+        <button class="det-model active" data-model="balanced" data-alpha="1.0">
+          <b>{% trans "Balans" %}</b>
+          <span>{% trans "Standart · ~16 MB" %}</span>
+          <em>{% trans "Aniqlik: yaxshi" %}</em>
+        </button>
+        <button class="det-model" data-model="accurate" data-alpha="1.0" data-hi="1">
+          <b>{% trans "Aniq" %}</b>
+          <span>{% trans "Og'ir · ~16 MB · sekinroq" %}</span>
+          <em>{% trans "Aniqlik: eng yuqori" %}</em>
+        </button>
+        <button class="det-model det-model-pro" data-model="vision" data-vision="1">
+          <span class="det-model-badge">PRO</span>
+          <b>{% trans "Aqlli AI" %}</b>
+          <span>{% trans "Vision · pullik · serverda" %}</span>
+          <em>{% trans "Aniqlik: eng yuqori, til bilan" %}</em>
+        </button>
+      </div>
+    </div>
+
+    <!-- Upload panel -->
+    <div class="det-panel active" id="panel-upload">
+      <label class="det-drop" id="dropZone">
+        <input type="file" id="fileInput" accept="image/png,image/jpeg,image/jpg" hidden>
+        <div class="det-drop-inner">
+          <svg viewBox="0 0 48 48" class="det-drop-ico"><path d="M24 32V12M16 20l8-8 8 8M8 32v6a2 2 0 002 2h28a2 2 0 002-2v-6"/></svg>
+          <p><b>{% trans "Rasmni bu yerga tashlang" %}</b></p>
+          <span>{% trans "yoki bosib tanlang · JPG, PNG, JPEG" %}</span>
+        </div>
+      </label>
+    </div>
+
+    <!-- Camera panel -->
+    <div class="det-panel" id="panel-camera">
+      <div class="det-cam">
+        <video id="camVideo" autoplay playsinline muted></video>
+        <div class="det-cam-overlay" id="camOverlay">
+          <button class="btn btn-primary" id="camStart">{% trans "Kamerani yoqish" %}</button>
+        </div>
+      </div>
+      <div class="det-cam-ctrl">
+        <button class="btn btn-primary" id="camShot" disabled>{% trans "Suratga olish" %}</button>
+        <button class="btn btn-ghost" id="camStop" disabled>{% trans "To'xtatish" %}</button>
+      </div>
+    </div>
+
+    <!-- Preview + result -->
+    <div class="det-result" id="detResult" hidden>
+      <!-- Top row: image + primary result -->
+      <div class="det-top">
+        <div class="det-preview">
+          <img id="previewImg" alt="preview">
+          <canvas id="shotCanvas" hidden></canvas>
+          <div class="det-scan" id="detScan"></div>
+        </div>
+        <div class="det-headline">
+          <div class="det-status" id="detStatus">
+            <span class="det-spinner"></span>
+            <span id="detStatusText">{% trans "Model yuklanmoqda..." %}</span>
+          </div>
+          <div class="det-main" id="detMain" hidden>
+            <span class="det-main-label">{% trans "Aniqlangan obyekt" %}</span>
+            <h3 class="det-main-name" id="detMainName">—</h3>
+            <span class="det-main-en" id="detMainEn"></span>
+            <span class="det-model-used" id="detModelUsed" hidden></span>
+            <p class="det-warn" id="detWarn" hidden></p>
+            <div class="det-ring" id="detRing">
+              <svg viewBox="0 0 120 120">
+                <defs>
+                  <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#22d3ee"/>
+                    <stop offset="50%" stop-color="#f472b6"/>
+                    <stop offset="100%" stop-color="#fbbf24"/>
+                  </linearGradient>
+                </defs>
+                <circle class="det-ring-bg" cx="60" cy="60" r="52"></circle>
+                <circle class="det-ring-fg" id="detRingFg" cx="60" cy="60" r="52"></circle>
+              </svg>
+              <div class="det-ring-val"><b id="detRingPct">0%</b><span>{% trans "Aniqlik" %}</span></div>
+            </div>
+            <div class="det-aibadge" id="detAiBadge" hidden>
+              <span class="det-aibadge-pulse"></span>
+              <div class="det-aibadge-text">
+                <b>{% trans "AI tahlili" %}</b>
+                <span>{% trans "Multimodal vision model" %}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other predictions (top 3) -->
+      <div class="det-others" id="detOthers" hidden>
+        <span class="det-sub-label">{% trans "Boshqa ehtimollar" %}</span>
+        <div class="det-predictions" id="detPredictions"></div>
+      </div>
+
+      <!-- Visualizations: 3D neural net + CNN schema -->
+      <div class="det-viz" id="detViz" hidden>
+        <div class="det-viz-card">
+          <span class="det-viz-title">{% trans "Neyron tarmoq faolligi" %}</span>
+          <div class="det-3d-wrap"><canvas id="detNet"></canvas></div>
+          <span class="det-viz-cap">{% trans "3D vizualizatsiya — model qatlamlari orqali signal oqimi" %}</span>
+        </div>
+        <div class="det-viz-card">
+          <span class="det-viz-title">{% trans "CNN tahlil bosqichlari" %}</span>
+          <div class="det-cnn" id="detCnn"></div>
+          <span class="det-viz-cap">{% trans "Rasm konvolyutsion qatlamlardan qanday o'tishi" %}</span>
+        </div>
+      </div>
+
+      <!-- AI detailed description -->
+      <div class="det-desc" id="detDesc" hidden>
+        <div class="det-desc-head">
+          <span class="det-desc-badge"><i></i>{% trans "AI tahlili" %}</span>
+          <span class="det-desc-model">deepseek-v4-flash</span>
+        </div>
+        <div class="det-desc-body" id="detDescBody">
+          <div class="det-desc-loading" id="detDescLoading">
+            <span class="det-spinner"></span>
+            <span>{% trans "Batafsil ma'lumot tayyorlanmoqda..." %}</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-ghost det-again" id="detAgain">{% trans "Boshqa rasm" %}</button>
+    </div>
+    <p class="det-note">{% trans "Eslatma: oddiy aniqlash brauzeringizda ishlaydi (MobileNetV2, ImageNet). \"Aqlli AI\" rejimi server orqali multimodal vision modeliga so'rov yuboradi (pullik) — natija siz tanlagan tilda batafsil javob sifatida keladi." %}</p>
+  </div>
+</section>
+
+<!-- ===== CHAT ===== -->
+<section class="section" id="chat">
+  <div class="sec-head reveal">
+    <span class="sec-num">10</span>
+    <h2>{% trans "AI yordamchidan so'rang" %}</h2>
+    <p>{% trans "Multimedia AI modellari haqida savol bering. Javob siz tanlagan tilda keladi." %}</p>
+  </div>
+  <div class="chat reveal">
+    <div class="chat-head">
+      <span class="chat-status"><i></i>{% trans "Multimedia AI yordamchisi" %}</span>
+      <span class="chat-model">deepseek-v4-flash</span>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="msg bot">
+        <div class="bubble">{% trans "Salom! Men multimedia AI modellari bo'yicha yordamchiman. Diffuziya modellari, Whisper yoki video generatsiya haqida so'rang." %}</div>
+      </div>
+    </div>
+    <div class="chat-suggest" id="chatSuggest">
+      <button>{% trans "Diffuziya modeli qanday ishlaydi?" %}</button>
+      <button>{% trans "CNN va ViT farqi nimada?" %}</button>
+      <button>{% trans "Whisper nima qiladi?" %}</button>
+    </div>
+    <form class="chat-input" id="chatForm">
+      <input type="text" id="chatText" placeholder="{% trans 'Savolingizni yozing...' %}" autocomplete="off" maxlength="1000">
+      <button type="submit" id="chatSend" aria-label="{% trans 'Yuborish' %}">
+        <svg viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-7-8-3z"/></svg>
+      </button>
+    </form>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  window.CHAT_URL = "{% url 'chat_api' %}";
+  window.DESCRIBE_URL = "{% url 'describe_api' %}";
+  window.VISION_URL = "{% url 'vision_api' %}";
+  window.MODELS_BASE = "{% static 'models/' %}";
+  window.CSRF = "{{ csrf_token }}";
+  window.I18N = {
+    error: "{% trans 'Kechirasiz, xatolik yuz berdi. Qayta urinib koring.' %}",
+    thinking: "{% trans 'Oylayapman...' %}",
+    modelLoading: "{% trans 'Model yuklanmoqda...' %}",
+    analyzing: "{% trans 'Tahlil qilinmoqda...' %}",
+    visionAnalyzing: "{% trans 'AI rasmni korib chiqmoqda...' %}",
+    done: "{% trans 'Aniqlandi' %}",
+    detected: "{% trans 'Aniqlangan obyekt' %}",
+    confidence: "{% trans 'Aniqlik darajasi' %}",
+    noCam: "{% trans 'Kamera topilmadi yoki ruxsat berilmadi.' %}",
+    badFile: "{% trans 'Faqat JPG, PNG yoki JPEG rasm yuklang.' %}",
+    detectError: "{% trans 'Rasmni tahlil qilishda xatolik. Qayta urinib koring.' %}",
+    visionError: "{% trans 'Vision AI bilan aloqa ornatib bolmadi. Internet yoki API kalitni tekshiring.' %}",
+    visionTooLarge: "{% trans 'Rasm juda katta (max 2MB). Kichikroq rasm yuklang.' %}",
+    cdnError: "{% trans 'AI modelni yuklab bolmadi. Internet aloqasini tekshiring.' %}",
+    descError: "{% trans 'Batafsil malumot olishda xatolik yuz berdi.' %}",
+    descLoading: "{% trans 'Batafsil malumot tayyorlanmoqda...' %}",
+    analyzed: "{% trans 'Tahlil tugadi' %}",
+    retry: "{% trans 'Qayta urinish' %}",
+    lowConf: "{% trans 'Ishonch past — natija notogri bolishi mumkin. Aniqroq yoki yoruqroq rasm sinab koring.' %}",
+    modelUsed: "{% trans 'Model' %}"
+  };
+  // ImageNet eng keng tarqalgan obyektlar -> UZ/QQ tarjima
+  window.LABELS = {{ labels_json|safe }};
+</script>
+{% endblock %}
